@@ -7,8 +7,7 @@ const randomColors = [
   "#20BF55",
 ];
 
-const array = ["a", "b", "c"];
-const randomIndex = Math.floor(Math.random() * array.length - 1);
+const randomIndex = Math.floor(Math.random() * randomColors.length - 1);
 console.log(array[randomIndex]); // Will print either 'a', 'b', or 'c'
 
 // Get color indicator element from the DOM
@@ -17,7 +16,7 @@ const colorPreviewElement = document.getElementById("color-indicator");
 
 // Enable color to be changed from the app
 
-const colorChoiceElement = document.getElementById("color-selector");
+// const colorChoiceElement = document.getElementById("color-selector");
 
 const colorButton = document.getElementById("color-button");
 
@@ -28,7 +27,7 @@ colorButton.addEventListener("click", changeColor);
 // Change color of indicator
 
 function changeColor() {
-  colorPreviewElement.style.backgroundColor = array[randomIndex];
+  colorPreviewElement.style.backgroundColor = .value
 }
 
 randomColors.forEach(changeColor);
